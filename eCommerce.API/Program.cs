@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 var app = builder.Build();
 
 app.UseExceptionHandlingMiddleware();
-app.UseRouting();
+//app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
