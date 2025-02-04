@@ -17,7 +17,7 @@ namespace eCommerce.API.Controllers
 
        
         [HttpPost("register")]
-        public async Task<IActionResult> Register(RegisterRequest registerRequest)
+        public async Task<IActionResult> Register([FromBody] RegisterRequest registerRequest)
         {
             if(registerRequest is null)
             {
@@ -33,7 +33,7 @@ namespace eCommerce.API.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login(LoginRequest loginRequest)
+        public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
         {
             if (loginRequest is null)
             {
